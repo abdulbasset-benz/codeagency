@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Responsive Navbar</title>
+  </head>
+  <body class="bg-gray-100">
+    <nav class="flex justify-between items-center bg-white p-4 shadow-md relative z-20">
+      <!-- Brand -->
+      <div class="flex items-center gap-2">
+        <img class="w-14" src="Brand/Vector.svg" alt="Logo" />
+        <h1 class="capitalize font-bold hidden md:flex">Coditech</h1>
+      </div>
+
+      <!-- Mobile Menu Icon -->
+      <button id="menuToggle" class="md:hidden">
+        <img src="Brand/menu-fill.svg" alt="Menu Icon" />
+      </button>
+    </nav>
+
+    <!-- Slide-in Sidebar Menu -->
+    <div
+      id="mobileMenu"
+      class="fixed flex flex-col items-center gap-4 top-0 right-0 h-full w-[80%] bg-white shadow-lg transform translate-x-full transition-transform duration-300 md:hidden z-30"
+    >
+      <div class="w-full flex justify-end p-5">
+        <button id="menuClose">
+          <img src="Brand/close-line.svg" alt="Close Icon" />
+        </button>
+      </div>
+      <ul class="flex flex-col items-center gap-6 px-6 text-sm text-gray-700">
+        <li><a class="capitalize hover:text-indigo-500" href="#">accueil</a></li>
+        <li><a class="capitalize hover:text-indigo-500" href="#">contact</a></li>
+        <li><a class="capitalize hover:text-indigo-500" href="#">projects</a></li>
+        <li><a class="capitalize hover:text-indigo-500" href="#">services</a></li>
+      </ul>
+      <button class="bg-gradient-to-tr from-purple-800 via-purple-600 to-pink-500 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:opacity-90 transition">
+        Contact us
+      </button>
+      
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
+
