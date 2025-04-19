@@ -1,13 +1,15 @@
-const menuToggle = document.getElementById('menuToggle');
-      const menuClose = document.getElementById('menuClose');
-      const mobileMenu = document.getElementById('mobileMenu');
+const menuToggle = document.getElementById("menuToggle");
+const menuClose = document.getElementById("menuClose");
+const navMenu = document.getElementById("navMenu");
 
-      menuToggle.addEventListener('click', () => {
-        mobileMenu.classList.remove('translate-x-full');
-        mobileMenu.classList.add('translate-x-0');
-      });
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.remove("translate-x-full");
+  navMenu.classList.remove("hidden");
+});
 
-      menuClose.addEventListener('click', () => {
-        mobileMenu.classList.remove('translate-x-0');
-        mobileMenu.classList.add('translate-x-full');
-      });
+menuClose.addEventListener("click", () => {
+  navMenu.classList.add("translate-x-full");
+  setTimeout(() => {
+    navMenu.classList.add("hidden");
+  }, 300);
+});
