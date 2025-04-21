@@ -12,6 +12,18 @@
       body {
         overflow-x: hidden;
       }
+      @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
     </style>
     <title>Responsive Navbar</title>
   </head>
@@ -115,10 +127,10 @@
 
         <div class="flex justify-center items-center flex-1 mt-6 md:mt-0 mb-5">
           <img
-            src="/Brand/web-development 1.svg"
-            alt="Web Development Illustration"
-            class="max-w-full h-auto"
-          />
+  src="/Brand/web-development 1.svg"
+  alt="Web Development Illustration"
+  class="max-w-full h-auto animate-float"
+/>
         </div>
 
         <!-- Ellipse inside main, only half visible -->
@@ -147,19 +159,19 @@
         <div
           class="flex flex-col items-center p-6 bg-slate-100 rounded-md shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.02] hover:-translate-y-1 cursor-pointer h-full"
         >
-          <div class="mb-4 w-16 h-16 flex items-center justify-center">
+          <div class="mb-4 w-16 h-16 flex items-center justify-center md:justify-start w-full">
             <img
               src="Brand/Group 1.svg"
               alt="Web Design"
-              class="w-full h-full object-contain transition-transform duration-300 hover:rotate-1"
+              class=" h-full object-contain transition-transform duration-300 hover:rotate-1"
             />
           </div>
           <h2
-            class="bg-gradient-to-tr from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent font-semibold text-lg mb-4 text-center"
+            class="bg-gradient-to-tr from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent font-semibold text-lg mb-4 text-center md:w-full md:text-left"
           >
             Web Design & Development
           </h2>
-          <p class="text-gray-600 text-sm text-center mb-4">
+          <p class="text-gray-600 text-sm text-center md:text-left mb-4">
             A Website is an extension of yourself and we can help you to express
             it properly. Your website is your number one marketing asset because
             we live in a digital age.
@@ -170,19 +182,19 @@
         <div
           class="flex flex-col items-center p-6 bg-slate-100 rounded-md shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.02] hover:-translate-y-1 cursor-pointer h-full"
         >
-          <div class="mb-4 w-16 h-16 flex items-center justify-center">
+          <div class="mb-4 w-16 h-16 flex items-center justify-center md:justify-start w-full">
             <img
               src="Brand/Credit_card_perspective_matte.svg"
               alt="E-commerce"
-              class="w-full h-full object-contain transition-transform duration-300 hover:rotate-1"
+              class=" h-full object-contain transition-transform duration-300 hover:rotate-1"
             />
           </div>
           <h2
-            class="bg-gradient-to-tr from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent font-semibold text-lg mb-4 text-center"
+            class="bg-gradient-to-tr from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent font-semibold text-lg mb-4 text-center md:w-full md:text-left"
           >
             E-commerce Solutions
           </h2>
-          <p class="text-gray-600 text-sm text-center mb-4">
+          <p class="text-gray-600 text-sm text-center md:text-left">
             Ready to grow your business online? We build powerful e-commerce
             platforms that are easy to manage, convert customers efficiently,
             and scale with your success.
@@ -193,19 +205,19 @@
         <div
           class="flex flex-col items-center p-6 bg-slate-100 rounded-md shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.02] hover:-translate-y-1 cursor-pointer h-full"
         >
-          <div class="mb-4 w-16 h-16 flex items-center justify-center">
-            <img
+        <div class="mb-4 w-16 h-16 flex items-center justify-center md:justify-start w-full">
+                      <img
               src="Brand/Target_perspective_matte.svg"
               alt="SEO"
-              class="w-full h-full object-contain transition-transform duration-300 hover:rotate-1"
+              class=" h-full object-contain transition-transform duration-300 hover:rotate-1"
             />
           </div>
           <h2
-            class="bg-gradient-to-tr from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent font-semibold text-lg mb-4 text-center"
+            class="bg-gradient-to-tr from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent font-semibold text-lg mb-4 text-center md:w-full md:text-left"
           >
             SEO Optimization
           </h2>
-          <p class="text-gray-600 text-sm text-center mb-4">
+          <p class="text-gray-600 text-sm text-center md:text-left mb-4">
             We help your website get found. Our SEO strategies are designed to
             boost your visibility, attract the right audience, and drive real
             results over time.
@@ -216,19 +228,19 @@
         <div
           class="flex flex-col items-center p-6 bg-slate-100 rounded-md shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.02] hover:-translate-y-1 cursor-pointer h-full"
         >
-          <div class="mb-4 w-16 h-16 flex items-center justify-center">
-            <img
+        <div class="mb-4 w-16 h-16 flex items-center justify-center md:justify-start w-full">
+          <img
               src="Brand/Tools_perspective_matte.svg"
               alt="Maintenance"
-              class="w-full h-full object-contain transition-transform duration-300 hover:rotate-1"
+              class=" h-full object-contain transition-transform duration-300 hover:rotate-1"
             />
           </div>
           <h2
-            class="bg-gradient-to-tr from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent font-semibold text-lg mb-4 text-center"
+            class="bg-gradient-to-tr from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent font-semibold text-lg mb-4 text-center md:w-full md:text-left"
           >
             Maintenance & Support
           </h2>
-          <p class="text-gray-600 text-sm text-center mb-4">
+          <p class="text-gray-600 text-sm text-center md:text-left mb-4">
             We're in it for the long haul. From bug fixes to content updates, we
             offer reliable support and maintenance so your site stays fresh,
             secure, and running smoothly.
@@ -282,13 +294,41 @@
           <img src="tech/php.svg" alt="PHP" class="w-16 h-16 hover:scale-110 transition duration-300">
           <img src="tech/laravel.svg" alt="Laravel" class="w-16 h-16 hover:scale-110 transition duration-300">
           <img src="tech/nodejs.svg" alt="Node.js" class="w-16 h-16 hover:scale-110 transition duration-300">
-          <img src="tech/mysql.svg" alt="MySQL" class="w-16 h-16 hover:scale-110 transition duration-300">
+          <img src="tech/mysql.svg" alt="MySQL" class="w-20 h-20 hover:scale-110 transition duration-300">
           <img src="tech/git.svg" alt="Git" class="w-16 h-16 hover:scale-110 transition duration-300">
         </div>
       </div>
     </section>
     
-    
+    <section>
+      <div class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-4">Ready to start your project?</h2>
+          <p class="mb-8">Let's work together to bring your vision to life.</p>
+          <button class="bg-white text-purple-900 font-semibold px-6 py-3 rounded-lg shadow-md hover:opacity-90 transition">Contact us</button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="bg-gray-800 text-white py-6 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+          <p>&copy; 2023 Coditech. All rights reserved.</p>
+          <div class="flex justify-center gap-4 mt-4">
+            <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+            <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-900 text-white py-2 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+          <p>Follow us on:</p>
+          <div class="flex justify-center gap-4 mt-2">
+            <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
+            <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
+            <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
+          </div>
+        </div>
+    </footer>
     
 
     <script src="script.js"></script>
